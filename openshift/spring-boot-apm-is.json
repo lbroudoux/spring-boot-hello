@@ -1,0 +1,30 @@
+{
+  "kind": "ImageStreamList",
+  "apiVersion": "v1",
+  "metadata": {},
+  "items": [
+    {
+      "kind": "ImageStream",
+      "apiVersion": "v1",
+      "metadata": {
+        "name": "spring-boot-apm",
+        "creationTimestamp": null
+      },
+      "spec": {
+        "dockerImageRepository": "lbroudoux/s2i-java-apm",
+        "tags": [
+          {
+            "name": "latest",
+            "annotations": {
+              "description": "Build and run Spring Boot applications with Hawkular APM support",
+              "iconClass": "icon-java",
+              "tags": "java,spring,apm",
+              "supports": "java:8,java",
+              "sampleRepo": "http://github.com/lbroudoux/spring-boot-hello.git"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
